@@ -14,12 +14,12 @@ public class saveethalogin{
 		//driver.get("https://www.google.com/");
 		driver.manage().window().maximize();
 						
-		driver.get("https://github.com/login");
-		WebElement username=driver.findElement(By.id("login_field"));		
+		driver.get("https://arms.sse.saveetha.com");
+		WebElement username=driver.findElement(By.id("txtusername"));		
 		System.out.println(username);
-		WebElement password=driver.findElement(By.id("password"));
+		WebElement password=driver.findElement(By.id("txtpassword"));
 		System.out.println(password);
-		WebElement login=driver.findElement(By.name("btn"));
+		WebElement login=driver.findElement(By.name("btnlogin"));
 		System.out.println(login);
 		username.sendKeys("192110089");
 		password.sendKeys("Not gonna leak my password");
